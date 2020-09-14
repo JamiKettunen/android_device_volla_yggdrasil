@@ -16,3 +16,11 @@ on zygote-start
     # Remove default overlay to frameworks-res so that ours can work
     mount none /system/overlay/DummyOverlay.apk /vendor/overlay/framework-res__auto_generated_rro.apk bind
 
+on charger
+    start charger_healthd
+
+service charger_healthd /sbin/healthd -c
+    class core
+    critical
+    group root system wakelock
+    disabled

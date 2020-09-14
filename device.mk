@@ -73,6 +73,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/usr/share/upstart/sessions/mtp-server.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/upstart/sessions/mtp-server.conf \
     $(LOCAL_PATH)/halium-overlay/usr/share/usbinit/setupusb:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/usbinit/setupusb
 
+# Offline charging support
+PRODUCT_PACKAGES += \
+    charger_res_images
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/system/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_SYSTEM)/halium/system/lib64/libtinyalsa.so \
     $(LOCAL_PATH)/halium-overlay/vendor/lib/hw/audio.primary.mt6763.so:$(TARGET_COPY_OUT_SYSTEM)/halium/vendor/lib/hw/audio.primary.mt6763.so \
