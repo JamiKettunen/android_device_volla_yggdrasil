@@ -8,3 +8,4 @@ k63v2_64_bsp:
     - Landscape
     - InvertedLandscape
   VibrateDurationExtraMs: 40
+  QtWebEngineNoAccelVideoDecoding: true
