@@ -77,6 +77,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/halium-overlay/etc/deviceinfo/devices/halium.yaml:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/deviceinfo/devices/halium.yaml \
     $(LOCAL_PATH)/halium-overlay/etc/NetworkManager/conf.d/.halium-overlay-dir:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/NetworkManager/conf.d/.halium-overlay-dir \
     $(LOCAL_PATH)/halium-overlay/etc/NetworkManager/conf.d/yggdrasil-pmf-no-optional.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/NetworkManager/conf.d/yggdrasil-pmf-no-optional.conf \
+    $(LOCAL_PATH)/halium-overlay/etc/systemd/system/ofono.service.d/.halium-overlay-dir:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/systemd/system/ofono.service.d/.halium-overlay-dir \
+    $(LOCAL_PATH)/halium-overlay/etc/systemd/system/ofono.service.d/wait-for-ril.conf:$(TARGET_COPY_OUT_SYSTEM)/halium/etc/systemd/system/ofono.service.d/wait-for-ril.conf \
     $(LOCAL_PATH)/halium-overlay/usr/share/repowerd/device-configs/config-default.xml:$(TARGET_COPY_OUT_SYSTEM)/halium/usr/share/repowerd/device-configs/config-default.xml
 
 PRODUCT_COPY_FILES += \
